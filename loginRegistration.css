@@ -83,19 +83,22 @@
     border: none;
     border-bottom: 2px solid #393737; 
     outline: none;
-    background: transparent;
-    color: #090606; 
+    background: transparent; /* Make input field transparent */
+    color: #090606; /* Text color */
 }
 
 .input-field::placeholder {
-    color: #0d0a0a; 
+    color: rgba(13, 10, 10, 0.7); /* Adjust placeholder color to be more transparent */
 }
 
-
+.input-field:focus {
+    border-bottom: 2px solid #47320a; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(71, 50, 10, 0.5); /* Add a slight shadow */
+}
 
 .submit-btn {
     width: 75%;
-    padding:10px 30px;
+    padding: 10px 30px;
     cursor: pointer;
     display: block;
     margin: auto;                
@@ -110,7 +113,8 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
-    color: #fff;}
+    color: #fff;
+}
 
 .check-box input[type="checkbox"] {
     position: absolute;
@@ -119,6 +123,7 @@
     height: 0;
     width: 0;
 }
+
 .check-box input[type="checkbox"] + span {
     position: relative;
     padding-left: 25px;
